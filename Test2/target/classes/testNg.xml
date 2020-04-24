@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="这是测试套件">
+    <test name="这是测试模块">
+        <classes>
+            <class name="com.lqs.reportdemo.ReportDemo">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+
+                </methods>
+
+
+
+            </class>
+
+
+
+        </classes>
+
+
+
+    </test>
+    <listeners>
+        <listener  class-name="com.lqs.reportdemo.ExtentTestNGIReporterListenerOld"/>
+    </listeners>
+
+</suite>

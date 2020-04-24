@@ -1,0 +1,109 @@
+[
+  {"description":"获取cookies",
+    "request":{
+      "uri":"/getCookies",
+      "method":"post",
+      "json":{"username":"lqs",
+              "password":"123456"}
+    },
+    "response":{
+
+      "json":{
+        "status":1,
+        "msg":"欢迎你，lqs"
+      }
+      ,
+      "cookies":{"login":"true"},
+      "headers":{
+        "Content-Type":"application/json; charset=gbk"
+      }
+    }
+
+  },
+
+  {"description":"这是第一个mock例子",
+    "request":{
+      "uri":"/demo"
+    },
+    "response":{
+      "text":"第一个mock",
+      "headers":{
+        "Content-Type":"application/json; charset=gbk"
+      }
+    }
+
+
+  },
+
+  {"description":"模拟没有参数的get请求",
+    "request":{
+      "uri":"/demo1",
+      "method":"get"
+    },
+    "response":{
+      "text":"没有参数的get请求"
+    }
+
+
+  },
+
+  {"description":"模拟没有参数的get请求",
+    "request":{
+      "uri":"/demo2",
+      "method":"get",
+      "queries":{"name":"zhangsan","age":"18"}
+    },
+    "response":{
+      "text":"有参数的get请求"
+    }
+
+
+  },
+
+  {
+    "description":"带参数的post请求",
+    "request":{
+      "uri":"/demoPost",
+      "method":"post",
+      "forms":{"name":"lisi"}
+    },
+    "response":{
+      "text":"带参数的post请求"
+    }
+
+  },
+  {
+    "description":"携带cookies的get请求",
+    "request":{
+      "uri":"/demo/needCookies"
+      ,"method":"get",
+      "cookies":{"login":"true"}
+    },
+    "response":{
+      "text":"需要cookies的get请求"
+    ,
+      "headers":{
+        "Content-Type":"application/json; charset=gbk"
+      }
+    }
+  },
+
+  {
+    "description":"携带cookies的get请求",
+    "request":{
+      "uri":"/demo/postCookies"
+    ,"method":"post",
+      "cookies":{"login":"true"},
+      "json":{
+        "name":"wangsisi"
+      }
+    },
+    "response":{
+      "status":200,
+      "json":{"name":"lqs"},
+      "headers":{
+        "Content-Type":"application/json; charset=gbk"
+      }
+    }
+  }
+]

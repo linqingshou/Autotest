@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="suite_par">
+    <test name="par">
+        <classes >
+            <parameter name="str" value="par" />
+            <class name="com.lqs.testng.paramter.ParamterTest"/>
+
+        </classes>
+
+
+    </test>
+
+
+</suite>
